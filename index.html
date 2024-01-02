@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Quiz App Vezba</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <!-- NAV -->
+
+        <nav class="nav">
+
+            <!-- CATEGORY NAME -->
+
+            <div class="category-name hidden">
+                <div class="logo">
+                    <img src="assets/images/icon-accessibility.svg" alt="Category Logo Image" class="logo-img">
+                </div>
+                <h2>Accessibility</h2>
+            </div>
+
+            <!-- LIGHT-DARK MODE -->
+
+            <div class="light-dark-mode">
+                <img src="assets/images/icon-sun-light.svg" alt="Light Mode Icon" class="toggle-icon light-mode-icon hidden">
+                <img src="assets/images/icon-sun-dark.svg" alt="Light-Dark Mode Icon" class="toggle-icon light-dark-mode-icon">
+                <div class="light-dark-mode-toggle">
+                    <div class="toggle-switch"></div>
+                </div>
+                <img src="assets/images/icon-moon-light.svg" alt="Dark-Light Mode Icon" class="toggle-icon dark-light-mode-icon hidden">
+                <img src="assets/images/icon-moon-dark.svg" alt="Dark Mode Icon" class="toggle-icon dark-mode-icon">
+            </div>
+        </nav>
+        <main class="main">
+
+            <!-- HEADER PAGE -->
+
+            <header class="header">
+                <h1><span class="normal-span">Welcome to the</span> <span class="bold-span">Frontend Quiz!</span></h1>
+                <p class="header-p">Pick a subject to get started.</p>
+            </header>
+
+            <!-- QUESTIONS -->
+
+            <section class="question hidden">
+                <p class="header-p">Question <span class="question-number">6</span> of <span class="question-total">10</span></p>
+                <p class="question-text">
+                    Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?
+                </p>
+                <div class="timer">
+                    <div class="timer-line"></div>
+                </div>
+            </section>
+
+            <!-- ANSWERS -->
+
+            <section class="answers">
+                <div class="answer html-category">
+                    <div class="answer-icon html">
+                        <img src="assets/images/icon-html.svg" alt="HTML Icon" class="answer-img">
+                        <p class="answer-letter answer-icon hidden">A</p>
+                    </div>
+                    <p class="answer-text">
+                        HTML
+                    </p>
+                    <img src="assets/images/icon-correct.svg" alt="Checkmark Icon" class="right-wrong correct hidden">
+                    <img src="assets/images/icon-incorrect.svg" alt="X Icon" class="right-wrong incorrect hidden">
+                </div>
+
+                <div class="answer css-category">
+                    <div class="answer-icon css">
+                        <img src="assets/images/icon-css.svg" alt="HTML Icon" class="answer-img">
+                        <p class="answer-letter answer-icon hidden">B</p>
+                    </div>
+                    <p class="answer-text">
+                        CSS
+                    </p>
+                    <img src="assets/images/icon-correct.svg" alt="Checkmark Icon" class="right-wrong correct hidden">
+                    <img src="assets/images/icon-incorrect.svg" alt="X Icon" class="right-wrong incorrect hidden">
+                </div>
+
+                <div class="answer js-category">
+                    <div class="answer-icon js">
+                        <img src="assets/images/icon-js.svg" alt="HTML Icon" class="answer-img">
+                        <p class="answer-letter answer-icon hidden">C</p>
+                    </div>
+                    <p class="answer-text">
+                        Javascript
+                    </p>
+                    <img src="assets/images/icon-correct.svg" alt="Checkmark Icon" class="right-wrong correct hidden">
+                    <img src="assets/images/icon-incorrect.svg" alt="X Icon" class="right-wrong incorrect hidden">
+                </div>
+
+                <div class="answer access-category">
+                    <div class="answer-icon access">
+                        <img src="assets/images/icon-accessibility.svg" alt="HTML Icon" class="answer-img">
+                        <p class="answer-letter answer-icon hidden">D</p>
+                    </div>
+                    <p class="answer-text">
+                        Accessibility
+                    </p>
+                    <img src="assets/images/icon-correct.svg" alt="Checkmark Icon" class="right-wrong correct hidden">
+                    <img src="assets/images/icon-incorrect.svg" alt="X Icon" class="right-wrong incorrect hidden">
+                </div>
+                <div class="submit-answer hidden">
+                    <button class="submit-btn click-btn" disabled>Submit Answer</button>
+                    <p class="error hidden">
+                        <img src="assets/images/icon-incorrect.svg" alt="X Icon" class="right-wrong error-icon"> <span class="error-text">Please select an answer</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- SCORE -->
+
+            <section class="score hidden">
+                <div class="score-container">
+                    <div class="category-name">
+                        <div class="logo">
+                            <img src="assets/images/icon-accessibility.svg" alt="Category Logo Image" class="logo-img">
+                        </div>
+                        <h2>Accessibility</h2>
+                    </div>
+                    <p class="score-number">8</p>
+                    <p class="out-of">out of <span class="max-score">10</span></p>
+                </div>
+                <button class="play-again-btn submit-btn dark-mode-btn">Play Again</button>
+            </section>
+
+            <!--  -->
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
